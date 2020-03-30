@@ -7,7 +7,7 @@
     "url": "https://github.com/heroku/heroku-api-plugin/issues"
   },
   "dependencies": {
-    "@heroku-cli/color": "^1.1.5",
+    "@heroku-cli/color": "^1.1.14",
     "@heroku-cli/command": "^8.1.23",
     "@oclif/command": "^1.4.32",
     "@oclif/config": "^1.6.27",
