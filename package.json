@@ -9,7 +9,7 @@
   "dependencies": {
     "@heroku-cli/color": "^1.1.5",
     "@heroku-cli/command": "^8.1.23",
-    "@oclif/command": "^1.4.32",
+    "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.6.27",
     "@oclif/errors": "^1.1.2",
     "cli-ux": "^4.6.1",
