@@ -17,7 +17,8 @@
     "fs-extra": "6.0.1",
     "get-stdin": "6.0.0",
     "http-call": "^5.1.4",
-    "tmp": "0.0.33"
+    "tmp": "0.0.33",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@fancy-test/nock": "^0.1.1",
@@ -52,9 +53,11 @@
   "scripts": {
     "postpublish": "rm oclif.manifest.json",
     "posttest": "tslint -p test && tsc --noEmit -p test",
-    "prepare": "rm -rf lib && tsc",
+    "prepare": "yarn run snyk-protect && rm -rf lib && tsc",
     "prepublishOnly": "oclif-dev manifest",
     "test": "mocha test/**/*.test.ts",
-    "version": "oclif-dev readme && git add README.md"
-  }
+    "version": "oclif-dev readme && git add README.md",
+    "snyk-protect": "snyk protect"
+  },
+  "snyk": true
 }
